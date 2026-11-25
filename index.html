@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ngữ pháp vượt ải</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M7.5 10.5V7.8a4.5 4.5 0 0 1 9 0v2.7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="5" y="10" width="14" height="11" rx="3" fill="currentColor"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4-4.7-4.6 6.5-.9z" fill="currentColor"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24"><path d="M3.5 9.5H7l4.5-4v13L7 14.5H3.5z" fill="currentColor"/><path d="M15 9a4 4 0 0 1 0 6M17.6 6.4a7.6 7.6 0 0 1 0 11.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M9.5 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M14.5 5.5L8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2.5c1.2 3.8 5.5 5.6 5.5 10.8a5.5 5.5 0 0 1-11 0c0-3 1.7-4.6 2.6-6.4.6 1.5 1.3 2.3 2.3 2.6-.4-2.4-.2-4.6.6-7z" fill="currentColor"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 3.5h10V9a5 5 0 0 1-10 0z" fill="currentColor"/><path d="M7 5.5H4.2a3.3 3.3 0 0 0 3.3 4.3M17 5.5h2.8a3.3 3.3 0 0 1-3.3 4.3" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M10.6 13.6h2.8v3.6h-2.8zM7.5 20.5h9v-1.8a1.5 1.5 0 0 0-1.5-1.5H9a1.5 1.5 0 0 0-1.5 1.5z" fill="currentColor"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-blocks" viewBox="0 0 24 24"><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.8" fill="currentColor"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.8" fill="currentColor"/><rect x="8.2" y="3.5" width="7.5" height="7.5" rx="1.8" fill="currentColor"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1.2-4.6L15.6 5a2 2 0 0 1 2.8 0l.6.6a2 2 0 0 1 0 2.8L8.6 18.8z" fill="currentColor"/></symbol>
+  <symbol id="i-sign" viewBox="0 0 24 24"><path d="M6.5 21V3.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M6.5 4.5h11.5l-2.3 3.7 2.3 3.8H6.5z" fill="currentColor"/></symbol>
+</svg>
+
+<header class="gnav">
+  <a class="brand" href="#home" aria-label="Ngữ pháp vượt ải, trang chủ">
+    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><defs><linearGradient id="gLogo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#64d2ff"/><stop offset="1" stop-color="#0071e3"/></linearGradient></defs><rect width="28" height="28" rx="8" fill="url(#gLogo)"/><path d="M6.5 20.5h4.5V16h4.5v-4.5H20V7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Vượt Ải</span>
+  </a>
+  <nav class="gl" aria-label="Chính">
+    <a href="#lo-trinh">Lộ trình</a>
+    <a href="#ai-1">Ải 1</a>
+  </nav>
+  <span class="xp" id="xp" title="Điểm kinh nghiệm">0 XP</span>
+</header>
+
+<main>
+<section id="view-home" class="view">
+  <div class="hero" id="hero">
+    <div class="wrap hero-txt">
+      <h1>Ngữ pháp tiếng Anh.<br>Vượt từng ải một.</h1>
+      <p class="lead">Dành cho người mất gốc. Học lý thuyết qua sơ đồ và hình ảnh, rồi vượt ba thử thách Easy, Medium, Hard để mở khoá ải tiếp theo.</p>
+      <div class="cta"><a class="btn" href="#ai-1" id="heroGo">Bắt đầu Ải 1</a><a class="btn ghost" href="#lo-trinh">Xem lộ trình</a></div>
+    </div>
+    <div class="stage">
+      <canvas id="fluid" aria-hidden="true"></canvas>
+      <div class="demo" aria-hidden="true">
+        <div class="demo-top"><span class="pill" style="--c:var(--easy)">Easy</span><span class="dbar"><i></i></span><span class="dct">6/20</span></div>
+        <p class="dq">She <span class="dblank">goes</span> to school every day.</p>
+        <div class="dopts"><span>go</span><span class="right">goes</span><span>going</span><span>is go</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="band" id="lo-trinh">
+    <div class="wrap sec-head">
+      <div>
+        <h2 class="sh">Bản đồ vượt ải</h2>
+        <p class="sub">Mỗi ải là một chủ điểm ngữ pháp, từ dễ đến khó. Cứ ba ải lại có một trạm tổng ôn 40 câu. Bản thử nghiệm này mới mở Ải 1.</p>
+      </div>
+      <div class="arrows"><button class="circ" id="mapPrev" aria-label="Cuộn bản đồ sang trái"><svg><use href="#i-prev"/></svg></button><button class="circ" id="mapNext" aria-label="Cuộn bản đồ sang phải"><svg><use href="#i-next"/></svg></button></div>
+    </div>
+    <div class="track-scroll" id="mapScroll" tabindex="0" aria-label="Bản đồ các ải"><div class="track" id="track"></div></div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <h2 class="sh">Một ải gồm những gì?</h2>
+      <p class="sub">Học trước, luyện sau. Đạt 14/20 câu để mở thử thách kế tiếp, 20/20 để nhận đủ ba sao.</p>
+      <ol class="flow">
+        <li style="--c:var(--th)"><b>Lý thuyết</b><span>Sơ đồ tư duy, hình minh hoạ, ví dụ có phát âm và câu hỏi thử ngay.</span></li>
+        <li style="--c:var(--easy)"><b>Easy · 20 câu</b><span>Nhận diện cấu trúc cơ bản: am, is, are, thêm s, do và does.</span></li>
+        <li style="--c:var(--med)"><b>Medium · 20 câu</b><span>Quy tắc chính tả, phủ định, câu hỏi, vị trí trạng từ.</span></li>
+        <li style="--c:var(--hard)"><b>Hard · 20 câu</b><span>Bẫy hay gặp, câu hỏi Wh-, đoạn văn tự gõ đáp án.</span></li>
+      </ol>
+      <div class="review-note"><span class="tro"><svg><use href="#i-trophy"/></svg></span><p>Sau mỗi ba ải: <b>Tổng ôn 40 câu</b> trộn kiến thức của cả ba ải. Qua trạm này mới mở được chặng tiếp theo.</p></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2 class="sh">Sáu dạng bài, đổi liên tục</h2>
+      <p class="sub">Mỗi thử thách trộn đủ sáu dạng để bạn không học vẹt.</p>
+      <div class="types">
+        <article class="type"><div class="mini"><div class="m-opts"><span>go</span><span class="on">goes</span><span>going</span><span>is go</span></div></div><h3>Chọn đáp án đúng</h3><p>Bốn lựa chọn, chỉ một đáp án đúng.</p></article>
+        <article class="type"><div class="mini"><div class="m-match"><span>watch</span><span class="on">plays</span><span class="on">play</span><span>watches</span></div></div><h3>Nối từ</h3><p>Ghép cặp động từ, câu hỏi và câu trả lời.</p></article>
+        <article class="type"><div class="mini"><p class="m-line">Lan <span class="m-in">lives</span> (live) in Hanoi.</p></div><h3>Điền từ</h3><p>Tự gõ dạng đúng của động từ.</p></article>
+        <article class="type"><div class="mini"><p class="m-line m-err"><u>My brother</u> <u class="on">don't</u> <u>like</u> <u>apples</u>.</p></div><h3>Tìm chỗ sai</h3><p>Chạm vào phần gạch chân bị sai.</p></article>
+        <article class="type"><div class="mini"><div class="m-opts two"><span class="on">True</span><span>False</span></div></div><h3>True or False</h3><p>Câu này đúng hay sai ngữ pháp?</p></article>
+        <article class="type"><div class="mini"><p class="m-line m-cloze">Tom <span class="m-in">gets</span> up at six. He <span class="m-in">has</span> breakfast, then he <span class="m-in">goes</span> to school.</p></div><h3>Hoàn thành đoạn văn</h3><p>Điền nhiều chỗ trống trong một đoạn ngắn.</p></article>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="view-ai-1" class="view" hidden>
+  <div class="lnav">
+    <div class="lnav-in">
+      <a class="lt" href="#ai-1">Ải 1 · Hiện tại đơn</a>
+      <nav class="ll" aria-label="Các phần của Ải 1">
+        <a href="#so-do">Sơ đồ</a><a href="#cach-dung">Cách dùng</a><a href="#cau-truc">Cấu trúc</a><a href="#s-es">Thêm -s/-es</a><a href="#dau-hieu">Dấu hiệu</a><a href="#loi-sai">Lỗi hay gặp</a>
+      </nav>
+      <a class="btn sm" href="#thu-thach">Luyện tập</a>
+    </div>
+  </div>
+
+  <header class="band ai-head">
+    <div class="wrap">
+      <h1 class="big">Thì hiện tại đơn <span>Present Simple</span></h1>
+      <p class="sub">Thì đầu tiên và được dùng nhiều nhất. Học xong ải này, bạn nói được về thói quen, sở thích, lịch trình và những sự thật quanh mình.</p>
+      <div class="stepper" id="stepper"></div>
+    </div>
+  </header>
+
+  <section class="band alt" id="so-do">
+    <div class="wrap">
+      <h2 class="sh rv">Cả ải trong một sơ đồ</h2>
+      <p class="sub rv">Nhìn tổng thể trước, đi vào chi tiết sau. Bấm vào một nhánh để nhảy tới phần đó.</p>
+      <div class="mm rv" id="mm">
+        <svg class="mm-lines" id="mmLines" aria-hidden="true"></svg>
+        <div class="mm-c" id="mmC"><b>Present Simple</b><span>Hiện tại đơn</span></div>
+        <a class="mm-b b1" href="#cach-dung" style="--c:#0a84ff"><h3><span class="ico"><svg><use href="#i-clock"/></svg></span>Cách dùng</h3><ul><li>Thói quen</li><li>Sự thật hiển nhiên</li><li>Lịch trình, thời gian biểu</li><li>Sở thích, cảm xúc</li></ul></a>
+        <a class="mm-b b2" href="#cau-truc" style="--c:#28b44c"><h3><span class="ico"><svg><use href="#i-blocks"/></svg></span>Cấu trúc</h3><ul><li>to be: am / is / are</li><li>V thường: V / V-s,es</li><li>Phủ định: don't / doesn't + V</li><li>Câu hỏi: Do / Does + S + V?</li></ul></a>
+        <a class="mm-b b3" href="#s-es" style="--c:#ff375f"><h3><span class="ico"><svg><use href="#i-pen"/></svg></span>Thêm -s / -es</h3><ul><li>+ s: plays, reads</li><li>+ es: goes, watches</li><li>y → ies: studies</li><li>have → has</li></ul></a>
+        <a class="mm-b b4" href="#dau-hieu" style="--c:#ff9f0a"><h3><span class="ico"><svg><use href="#i-sign"/></svg></span>Dấu hiệu</h3><ul><li>always, usually, often</li><li>sometimes, rarely, never</li><li>every day, every week</li><li>once / twice a week</li></ul></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="cach-dung">
+    <div class="wrap">
+      <h2 class="sh rv">Khi nào dùng hiện tại đơn?</h2>
+      <p class="sub rv">Bốn trường hợp. Mẹo nhớ: điều gì lặp lại đều đặn, luôn luôn đúng, hoặc đã có lịch sẵn.</p>
+    </div>
+    <div class="car" id="car" tabindex="0" aria-label="Bốn cách dùng, vuốt ngang để xem">
+      <article class="slide" style="--c:#0a84ff">
+        <div class="ill">
+          <svg viewBox="0 0 260 220" role="img" aria-label="Đồng hồ báo thức">
+            <defs><linearGradient id="gClk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ac8fa"/><stop offset="1" stop-color="#0060df"/></linearGradient></defs>
+            <ellipse cx="130" cy="204" rx="74" ry="8" fill="#003a80" opacity=".12"/>
+            <g class="bells"><path d="M58 64a30 30 0 0 1 42-40z" fill="#0a84ff"/><path d="M202 64a30 30 0 0 0-42-40z" fill="#0a84ff"/></g>
+            <path d="M88 180l-16 20M172 180l16 20" stroke="#0057c2" stroke-width="10" stroke-linecap="round"/>
+            <circle cx="130" cy="118" r="78" fill="url(#gClk)"/>
+            <circle cx="130" cy="118" r="62" fill="#fff"/>
+            <path d="M130 62v10M130 164v10M74 118h10M176 118h10" stroke="#1d1d1f" stroke-width="5" stroke-linecap="round"/>
+            <path class="hand-h" d="M130 118l24 16" stroke="#1d1d1f" stroke-width="7" stroke-linecap="round"/>
+            <path class="hand-m" d="M130 118V76" stroke="#1d1d1f" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="130" cy="118" r="7" fill="#ff375f"/>
+          </svg>
+        </div>
+        <div class="txt">
+          <h3>Thói quen, việc lặp đi lặp lại</h3>
+          <p>Những việc bạn làm thường xuyên: mỗi ngày, mỗi tuần, mỗi sáng.</p>
+          <ul class="ex">
+            <li><span class="en" data-say="I get up at 6 a.m. every day.">I <u>get up</u> at 6 a.m. every day.</span><span class="vi">Tôi thức dậy lúc 6 giờ sáng mỗi ngày.</span></li>
+            <li><span class="en" data-say="She walks to school.">She <u>walks</u> to school.</span><span class="vi">Cô ấy đi bộ đến trường.</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="slide" style="--c:#ff9f0a">
+        <div class="ill">
+          <svg viewBox="0 0 260 220" role="img" aria-label="Mặt trời mọc">
+            <defs><radialGradient id="gSun"><stop offset="0" stop-color="#ffe066"/><stop offset="1" stop-color="#ff9f0a"/></radialGradient><clipPath id="cSun"><rect x="14" y="14" width="232" height="192" rx="28"/></clipPath></defs>
+            <g clip-path="url(#cSun)">
+              <g class="sun"><circle cx="150" cy="112" r="64" fill="#ffd60a" opacity=".18"/><circle cx="150" cy="112" r="42" fill="url(#gSun)"/></g>
+              <path d="M0 150Q60 118 126 142T260 132V220H0z" fill="#ffb340" opacity=".55"/>
+              <path d="M0 172Q86 140 172 166T260 158V220H0z" fill="#ff9f0a"/>
+              <path d="M0 196Q90 176 180 192T260 190V220H0z" fill="#e8830a"/>
+            </g>
+          </svg>
+        </div>
+        <div class="txt">
+          <h3>Sự thật hiển nhiên</h3>
+          <p>Điều luôn đúng, ở đâu và lúc nào cũng vậy: tự nhiên, khoa học, địa lý.</p>
+          <ul class="ex">
+            <li><span class="en" data-say="The sun rises in the east.">The sun <u>rises</u> in the east.</span><span class="vi">Mặt trời mọc ở hướng đông.</span></li>
+            <li><span class="en" data-say="Water boils at 100 degrees Celsius.">Water <u>boils</u> at 100°C.</span><span class="vi">Nước sôi ở 100 độ C.</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="slide" style="--c:#28b44c">
+        <div class="ill">
+          <svg viewBox="0 0 260 220" role="img" aria-label="Đoàn tàu chạy đúng giờ">
+            <circle cx="206" cy="52" r="26" fill="#fff" stroke="#28b44c" stroke-width="6"/>
+            <path d="M206 36v16l-13 0" stroke="#1d1d1f" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <path d="M14 186H246" stroke="#c7c7cc" stroke-width="8" stroke-dasharray="8 14"/>
+            <path d="M14 178H246" stroke="#8e8e93" stroke-width="4"/>
+            <g class="train">
+              <rect x="30" y="92" width="150" height="72" rx="18" fill="#28b44c"/>
+              <path d="M176 92h8a44 44 0 0 1 44 44v28h-52z" fill="#1f9a3f"/>
+              <rect x="46" y="106" width="30" height="26" rx="7" fill="#fff"/><rect x="88" y="106" width="30" height="26" rx="7" fill="#fff"/><rect x="130" y="106" width="30" height="26" rx="7" fill="#fff"/>
+              <path d="M186 104h2a28 28 0 0 1 28 28h-30z" fill="#e8fff0"/>
+              <rect x="30" y="144" width="198" height="6" fill="#fff" opacity=".7"/>
+              <circle cx="58" cy="168" r="11" fill="#1d1d1f"/><circle cx="96" cy="168" r="11" fill="#1d1d1f"/><circle cx="160" cy="168" r="11" fill="#1d1d1f"/><circle cx="200" cy="168" r="11" fill="#1d1d1f"/>
+            </g>
+          </svg>
+        </div>
+        <div class="txt">
+          <h3>Lịch trình, thời gian biểu</h3>
+          <p>Giờ tàu xe, giờ học, giờ mở cửa: những việc đã có lịch cố định.</p>
+          <ul class="ex">
+            <li><span class="en" data-say="The train leaves at 7 p.m.">The train <u>leaves</u> at 7 p.m.</span><span class="vi">Tàu rời ga lúc 7 giờ tối.</span></li>
+            <li><span class="en" data-say="Our class starts at 7:30.">Our class <u>starts</u> at 7:30.</span><span class="vi">Lớp chúng ta bắt đầu lúc 7 giờ 30.</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="slide" style="--c:#ff375f">
+        <div class="ill">
+          <svg viewBox="0 0 260 220" role="img" aria-label="Cốc trà sữa và trái tim">
+            <ellipse cx="128" cy="206" rx="52" ry="7" fill="#7a0020" opacity=".1"/>
+            <path d="M138 74l16-50" stroke="#ff9f0a" stroke-width="10" stroke-linecap="round"/>
+            <path d="M84 84h88l-11 106a14 14 0 0 1-14 12h-38a14 14 0 0 1-14-12z" fill="#fff" stroke="#ff375f" stroke-width="5"/>
+            <path d="M89 112h78l-8.4 77a10 10 0 0 1-10 9h-41a10 10 0 0 1-10-9z" fill="#d9a77a"/>
+            <circle cx="108" cy="186" r="7" fill="#5b3a29"/><circle cx="126" cy="190" r="7" fill="#5b3a29"/><circle cx="144" cy="185" r="7" fill="#5b3a29"/><circle cx="117" cy="173" r="7" fill="#5b3a29"/><circle cx="137" cy="172" r="7" fill="#5b3a29"/>
+            <rect x="76" y="72" width="104" height="16" rx="8" fill="#ff375f"/>
+            <path class="heart" d="M206 92c-9-16-34-12-34 7 0 16 34 34 34 34s34-18 34-34c0-19-25-23-34-7z" fill="#ff375f"/>
+          </svg>
+        </div>
+        <div class="txt">
+          <h3>Sở thích, cảm xúc, trạng thái</h3>
+          <p>Đi với các động từ như like, love, hate, want, know, need.</p>
+          <ul class="ex">
+            <li><span class="en" data-say="I love milk tea.">I <u>love</u> milk tea.</span><span class="vi">Tôi rất thích trà sữa.</span></li>
+            <li><span class="en" data-say="He knows the answer.">He <u>knows</u> the answer.</span><span class="vi">Anh ấy biết câu trả lời.</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="wrap car-ctl">
+      <div class="dots" id="carDots"></div>
+      <div class="arrows"><button class="circ" id="carPrev" aria-label="Thẻ trước"><svg><use href="#i-prev"/></svg></button><button class="circ" id="carNext" aria-label="Thẻ sau"><svg><use href="#i-next"/></svg></button></div>
+    </div>
+    <div class="wrap"><div class="try rv" data-try="usage"></div></div>
+  </section>
+
+  <section class="band alt" id="cau-truc">
+    <div class="wrap">
+      <h2 class="sh rv">Hai loại động từ, hai cách chia</h2>
+      <p class="sub rv">Trước khi chia, hãy hỏi: câu này dùng <b>to be</b> (là, thì, ở) hay <b>động từ thường</b> (chỉ hành động, cảm xúc)?</p>
+      <div class="duo">
+        <div class="panel rv">
+          <h3>Động từ to be</h3>
+          <p class="note">Nghĩa là “là, thì, ở”. Đi trước danh từ, tính từ hoặc nơi chốn.</p>
+          <div class="be">
+            <div class="be-row"><span class="who">I</span><span class="v">am</span></div>
+            <div class="be-row"><span class="who">He / She / It / Lan / danh từ số ít</span><span class="v">is</span></div>
+            <div class="be-row"><span class="who">You / We / They / danh từ số nhiều</span><span class="v">are</span></div>
+          </div>
+          <ul class="forms">
+            <li><i>+</i><div><b>S + am / is / are</b><span class="en" data-say="She is a doctor.">She is a doctor.</span></div></li>
+            <li><i>–</i><div><b>S + am / is / are + not</b><span class="en" data-say="She isn't a doctor.">She isn't a doctor.</span><small>is not = isn't · are not = aren't · am not không viết tắt</small></div></li>
+            <li><i>?</i><div><b>Am / Is / Are + S …?</b><span class="en" data-say="Is she a doctor? Yes, she is.">Is she a doctor? Yes, she is.</span></div></li>
+          </ul>
+          <div class="try" data-try="tobe"></div>
+        </div>
+        <div class="panel rv">
+          <h3>Động từ thường</h3>
+          <p class="note">play, go, study, like… Chỉ hành động hoặc cảm xúc.</p>
+          <ul class="forms">
+            <li><i>+</i><div><b>I / You / We / They + V</b><b>He / She / It + V-s/es</b><span class="en" data-say="They play badminton. She plays badminton.">They play. She plays.</span></div></li>
+            <li><i>–</i><div><b>S + don't / doesn't + V</b><span class="en" data-say="They don't play. She doesn't play.">They don't play. She doesn't play.</span></div></li>
+            <li><i>?</i><div><b>Do / Does + S + V …?</b><span class="en" data-say="Does she play? Yes, she does.">Does she play? Yes, she does.</span><small>Trả lời: Yes, S + do / does. No, S + don't / doesn't.</small></div></li>
+          </ul>
+          <p class="callout">Đã có <b>does</b> hoặc <b>doesn't</b> thì động từ chính trở về nguyên mẫu: Does she <b>play</b>? Không viết “Does she plays?”.</p>
+          <div class="try" data-try="verb"></div>
+        </div>
+      </div>
+      <div class="builder panel rv" id="builder">
+        <div class="b-head"><h3>Máy chia câu</h3><p class="note">Đổi chủ ngữ và động từ, xem ba dạng câu thay đổi thế nào.</p></div>
+        <div class="seg-ctl" id="bSubj" role="radiogroup" aria-label="Chủ ngữ"></div>
+        <div class="seg-ctl" id="bVerb" role="radiogroup" aria-label="Động từ"></div>
+        <div class="b-out" id="bOut" aria-live="polite"></div>
+      </div>
+      <div class="wh panel rv">
+        <h3>Câu hỏi có từ để hỏi</h3>
+        <p class="formula">Wh- + do / does + S + V?</p>
+        <ul class="ex">
+          <li><span class="en" data-say="Where does she live?">Where <u>does</u> she live?</span><span class="vi">Cô ấy sống ở đâu?</span></li>
+          <li><span class="en" data-say="What do you do?">What <u>do</u> you do?</span><span class="vi">Bạn làm nghề gì?</span></li>
+          <li><span class="en" data-say="How often do they swim?">How often <u>do</u> they swim?</span><span class="vi">Họ đi bơi bao lâu một lần?</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="s-es">
+    <div class="wrap">
+      <h2 class="sh rv">Thêm -s hay -es?</h2>
+      <p class="sub rv">Chỉ áp dụng trong câu khẳng định khi chủ ngữ là he, she, it hoặc danh từ số ít.</p>
+      <div class="rules">
+        <div class="rule rv" style="--c:#0a84ff"><h3>Hầu hết động từ: + s</h3><p class="w">work → work<b>s</b><br>read → read<b>s</b><br>play → play<b>s</b></p></div>
+        <div class="rule rv" style="--c:#ff375f"><h3>Tận cùng o, s, ch, sh, x, z: + es</h3><p class="w">go → go<b>es</b><br>watch → watch<b>es</b><br>wash → wash<b>es</b><br>fix → fix<b>es</b></p><p class="tip">Mẹo nhớ: <b>Ô</b>ng <b>S</b>áu <b>Ch</b>ạy <b>X</b>e <b>SH</b> <b>Z</b>in</p></div>
+        <div class="rule rv" style="--c:#ff9f0a"><h3>Phụ âm + y: bỏ y, thêm ies</h3><p class="w">study → stud<b>ies</b><br>fly → fl<b>ies</b><br>cry → cr<b>ies</b></p><p class="tip">Nguyên âm + y thì chỉ thêm s: play → plays, buy → buys.</p></div>
+        <div class="rule rv" style="--c:#28b44c"><h3>Trường hợp đặc biệt</h3><p class="w">have → <b>has</b><br>be → <b>is</b><br>do → <b>does</b></p></div>
+      </div>
+      <div class="conv panel rv">
+        <label for="convIn">Máy biến hình: gõ một động từ</label>
+        <div class="conv-row"><input id="convIn" value="watch" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="24"><span class="conv-arrow" aria-hidden="true">→</span><output id="convOut" for="convIn"></output></div>
+        <p class="note" id="convWhy"></p>
+        <div class="chips" id="convChips"></div>
+      </div>
+      <div class="pron panel rv">
+        <h3>Mở rộng: đọc đuôi -s / -es thế nào?</h3>
+        <div class="pron-grid">
+          <div><b>/ɪz/</b><p>Sau âm /s/, /z/, /ʃ/, /tʃ/, /dʒ/, thường viết là -s, -x, -sh, -ch, -ce, -ge.</p><span class="en" data-say="watches, fixes, washes, changes">watches, fixes, washes, changes</span></div>
+          <div><b>/s/</b><p>Sau âm vô thanh /p/, /t/, /k/, /f/, /θ/.</p><span class="en" data-say="stops, gets, works, laughs">stops, gets, works, laughs</span></div>
+          <div><b>/z/</b><p>Các trường hợp còn lại.</p><span class="en" data-say="plays, reads, goes, cleans">plays, reads, goes, cleans</span></div>
+        </div>
+      </div>
+      <div class="try rv" data-try="ses"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="dau-hieu">
+    <div class="wrap">
+      <h2 class="sh rv">Dấu hiệu nhận biết</h2>
+      <p class="sub rv">Thấy những từ này trong câu, hãy nghĩ ngay tới hiện tại đơn.</p>
+      <div class="duo">
+        <div class="panel rv">
+          <h3>Trạng từ tần suất</h3>
+          <div class="freq">
+            <div class="fr" style="--w:100%"><span class="fw"><b>always</b><small>luôn luôn</small></span><span class="bar"><i></i></span><em>100%</em></div>
+            <div class="fr" style="--w:90%"><span class="fw"><b>usually</b><small>thường thường</small></span><span class="bar"><i></i></span><em>90%</em></div>
+            <div class="fr" style="--w:70%"><span class="fw"><b>often</b><small>thường</small></span><span class="bar"><i></i></span><em>70%</em></div>
+            <div class="fr" style="--w:50%"><span class="fw"><b>sometimes</b><small>thỉnh thoảng</small></span><span class="bar"><i></i></span><em>50%</em></div>
+            <div class="fr" style="--w:10%"><span class="fw"><b>rarely</b><small>hiếm khi</small></span><span class="bar"><i></i></span><em>10%</em></div>
+            <div class="fr" style="--w:0%"><span class="fw"><b>never</b><small>không bao giờ</small></span><span class="bar"><i></i></span><em>0%</em></div>
+          </div>
+          <p class="note">Các mức phần trăm chỉ là ước lượng để dễ nhớ.</p>
+        </div>
+        <div class="panel rv">
+          <h3>Đứng ở đâu trong câu?</h3>
+          <div class="pos">
+            <p><span class="tag">Trước động từ thường</span><span class="en" data-say="She often plays tennis.">She <mark>often</mark> plays tennis.</span></p>
+            <p><span class="tag">Sau to be</span><span class="en" data-say="He is never late.">He is <mark>never</mark> late.</span></p>
+          </div>
+          <h3 class="mt">Cụm từ chỉ thời gian</h3>
+          <p class="chips static"><span>every day</span><span>every morning</span><span>every week</span><span>once a week</span><span>twice a month</span><span>three times a year</span><span>on Mondays</span><span>at weekends</span><span>in the morning</span></p>
+          <p class="note">Thường đứng cuối câu: I play football <b>twice a week</b>.</p>
+        </div>
+      </div>
+      <div class="try rv" data-try="freq"></div>
+    </div>
+  </section>
+
+  <section class="band" id="loi-sai">
+    <div class="wrap">
+      <h2 class="sh rv">Bốn lỗi người mới hay mắc</h2>
+      <p class="sub rv">Nhớ bốn lỗi này là đã tránh được phần lớn bẫy trong bài tập.</p>
+      <div class="errs">
+        <div class="ecard rv"><p class="wrong">He go to school.</p><p class="right">He goes to school.</p><p class="why">Quên thêm -s / -es khi chủ ngữ là he, she, it.</p></div>
+        <div class="ecard rv"><p class="wrong">She doesn't likes cats.</p><p class="right">She doesn't like cats.</p><p class="why">Có doesn't rồi thì động từ giữ nguyên mẫu.</p></div>
+        <div class="ecard rv"><p class="wrong">I am go to school.</p><p class="right">I go to school.</p><p class="why">Không dùng am / is / are cùng động từ thường trong câu khẳng định.</p></div>
+        <div class="ecard rv"><p class="wrong">Do she speak English?</p><p class="right">Does she speak English?</p><p class="why">He, she, it hỏi bằng Does, không dùng Do.</p></div>
+      </div>
+      <div class="try rv" data-try="mix"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="thu-thach">
+    <div class="wrap">
+      <h2 class="sh rv">Sẵn sàng vượt ải?</h2>
+      <p class="sub rv">Mỗi thử thách 20 câu, trộn sáu dạng bài, có giải thích ngay sau mỗi câu. Đạt 14/20 để mở thử thách tiếp theo.</p>
+      <div class="chal" id="chal"></div>
+    </div>
+  </section>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p><b>Ngữ pháp vượt ải</b> · Bản thử nghiệm: đã mở Ải 1, Thì hiện tại đơn.</p>
+    <div class="foot-ctl">
+      <label class="sw" for="unlockAll"><input type="checkbox" id="unlockAll"><span class="knob" aria-hidden="true"></span>Mở khoá tất cả để xem thử</label>
+      <button class="btn soft sm" id="resetBtn" type="button">Xoá tiến độ</button>
+    </div>
+    <p class="small">Tiến độ được lưu trong trình duyệt bạn đang dùng.</p>
+  </div>
+</footer>
+
+<div class="quiz" id="quiz" hidden role="dialog" aria-modal="true" aria-label="Làm bài">
+  <div class="qtop">
+    <button class="circ" id="qClose" aria-label="Thoát bài làm"><svg><use href="#i-x"/></svg></button>
+    <div class="qbar"><i id="qBar"></i></div>
+    <span class="qct" id="qCt">1/20</span>
+    <span class="streak" id="qStreak" title="Chuỗi câu đúng liên tiếp"><svg><use href="#i-flame"/></svg><b>0</b></span>
+  </div>
+  <div class="qbody" id="qBody"></div>
+  <div class="qfoot" id="qFoot"><div class="qfoot-in"><div class="fb" id="qFb"></div><button class="btn big" id="qBtn" type="button" disabled>Kiểm tra</button></div></div>
+</div>
+
+<div class="dlg" id="dlg" hidden>
+  <div class="dlg-card" role="alertdialog" aria-modal="true" aria-labelledby="dlgT">
+    <h3 id="dlgT"></h3><p id="dlgP"></p>
+    <div class="dlg-btns"><button class="btn soft" id="dlgNo" type="button">Ở lại</button><button class="btn" id="dlgOk" type="button">Đồng ý</button></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script src="js/fluid.js"></script>
+<script src="js/data-ai1.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
